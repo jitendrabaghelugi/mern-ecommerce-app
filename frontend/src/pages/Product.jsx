@@ -26,7 +26,7 @@ const Product = () => {
         try {
             setLoading(true);
 
-            const response = await axios.get('http://localhost:5000/api/v1/product/allProducts');
+            const response = await axios.get('https://mern-ecommerce-app-n6us.onrender.com/api/v1/product/allProducts');
             if (response.data.success) {
                 setShowProduct(response.data.allProduct);
                 dispatch(setProducts(response.data.allProduct));

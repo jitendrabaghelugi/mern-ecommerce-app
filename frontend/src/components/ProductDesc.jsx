@@ -14,7 +14,7 @@ const ProductDesc = ({ productInfo }) => {
 
     const addProduct = async (productId) => {
         try {
-            const response = await axios.post("http://localhost:5000/api/v1/cart/add", { productId }, {
+            const response = await axios.post("https://mern-ecommerce-app-n6us.onrender.com/api/v1/cart/add", { productId }, {
                 headers: {
                     Authorization: `Bearer ${accessToken}`
                 }

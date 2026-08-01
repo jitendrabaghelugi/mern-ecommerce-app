@@ -18,7 +18,7 @@ const Cart = () => {
   const dispatch = useDispatch()
 
 
-  const API_URL = "http://localhost:5000/api/v1/cart"
+  const API_URL = "https://mern-ecommerce-app-n6us.onrender.com/api/v1/cart"
   const accessToken = localStorage.getItem("accessToken")
 
   const loadCart = async () => {

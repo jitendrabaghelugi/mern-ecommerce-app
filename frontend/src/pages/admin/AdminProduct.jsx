@@ -20,7 +20,7 @@ const AdminProduct = () => {
   const { products } = useSelector((store) => store.products)
   console.log(products)
 
-  const API_URL = "http://localhost:5000/api/v1/product"
+  const API_URL = "https://mern-ecommerce-app-n6us.onrender.com/api/v1/product"
   const accessToken = localStorage.getItem("accessToken")
   const [search, setSearch] = useState("")
   const [sortOrder, setSortOrder] = useState("")

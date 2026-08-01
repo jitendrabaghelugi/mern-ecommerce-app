@@ -52,7 +52,7 @@ const AdminSales = () => {
     try {
       setLoading(true)
 
-      const res = await axios.post("http://localhost:5000/api/v1/product/addProducts", formData, {
+      const res = await axios.post("https://mern-ecommerce-app-n6us.onrender.com/api/v1/product/addProducts", formData, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

@@ -47,7 +47,7 @@ const Login = () => {
     try {
 
       setIsLoading(true)
-      const res = await axios.post("http://localhost:5000/api/v1/user/login", formData, {
+      const res = await axios.post("https://mern-ecommerce-app-n6us.onrender.com/api/v1/user/login", formData, {
         headers: {
           "Content-Type": "application/json"
         }

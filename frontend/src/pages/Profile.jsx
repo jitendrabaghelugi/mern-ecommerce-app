@@ -76,7 +76,7 @@ const Profile = () => {
                 formData.append("profilePic", file);
             }
 
-            const response = await axios.put(`http://localhost:5000/api/v1/user/updateUser/${userId}`, formData, {
+            const response = await axios.put(`https://mern-ecommerce-app-n6us.onrender.com/api/v1/user/updateUser/${userId}`, formData, {
                 headers: {
                     Authorization: `Bearer ${accessToken}`,
                     "Content-Type": "multipart/form-data"

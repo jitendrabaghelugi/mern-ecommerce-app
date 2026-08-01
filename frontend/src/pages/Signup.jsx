@@ -45,7 +45,7 @@ const Signup = () => {
         console.log(formData);
         try {
             setLoading(true)
-            const res = await axios.post("http://localhost:5000/api/v1/user/register", formData, {
+            const res = await axios.post("https://mern-ecommerce-app-n6us.onrender.com/api/v1/user/register", formData, {
                 headers: {
                     "Content-Type": "application/json"
                 }

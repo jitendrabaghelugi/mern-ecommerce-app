@@ -32,7 +32,7 @@ const UserInfo = () => {
 
   const getUserData = async (userId) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/v1/user/getUserById/${userId}`)
+      const res = await axios.get(`https://mern-ecommerce-app-n6us.onrender.com/api/v1/user/getUserById/${userId}`)
       if (res.data.success) {
         setUserData(res.data.userData)
       }
@@ -78,7 +78,7 @@ const UserInfo = () => {
     try {
       setLoading(true)
 
-      const res = await axios.put(`http://localhost:5000/api/v1/user/updateUser/${userId}`, formData, {
+      const res = await axios.put(`https://mern-ecommerce-app-n6us.onrender.com/api/v1/user/updateUser/${userId}`, formData, {
         headers: {
           Authorization: `Bearer ${accessToken}`
         }
