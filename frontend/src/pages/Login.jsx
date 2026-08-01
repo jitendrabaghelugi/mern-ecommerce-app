@@ -109,7 +109,7 @@ const Login = () => {
                     Forgot your password?
                   </a>
                 </div>
-                <div className="relative">
+                <div className="relative mb-5">
                   <Input id="password" type={showPassword ? "text" : "password"}
                     name="password"
                     placeholder="Enter Your Password"
